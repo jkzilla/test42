@@ -10,4 +10,4 @@ jobs:
             source ~/.circlerc
             pyenv install 3.7.2
       - run:      
-            cat /opt/circleci/.pyenv/versions
+            pyenv versions
