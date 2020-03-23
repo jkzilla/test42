@@ -1,0 +1,13 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+      - run:
+          command: |
+            source ~/.circlerc
+            pyenv install 3.7.2
+      - run:      
+            cat /opt/circleci/.pyenv/versions/3.7.2
